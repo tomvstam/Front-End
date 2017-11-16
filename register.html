@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registreren</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700" rel="stylesheet">    
+</head>
+<body>
+    <header>
+            <nav>
+                <ul>
+                    <li><img  class="nslogo" src="nslogo.svg" alt="Logo Nederlandse Spoorwegen" height="20" width="52"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Registreren</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="register">
+    <form>
+        <h1>Registreren</h1>
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <label for="name">Voornaam *</label>
+            <input type="text" id="name" required>
+
+            <label for="surname">Achternaam *</label>
+            <input type="text" id="surname" required>
+
+            <label>Gender *</label>
+            <label>
+                <input name="gender" type="radio" value="man" required>
+                Man
+            </label>
+
+            <label>
+                <input name="gender"type="radio" value="vrouw">
+                Vrouw
+            </label>
+
+            <label>
+                <input name="gender"type="radio" value="other">
+                Overige
+            </label>
+
+            <label for="mail">Email *</label>
+            <input type="email" id="mail" required>
+
+            <label for="phone">Telefoonnummer</label>
+            <input type="tel" id="phone" maxlength="10">
+
+            <label for="password">Wachtwoord *</label>
+            <input type="password" id="password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Adresgegevens</legend>
+            <label for="street">Straatnaam</label>
+            <input type="text" id="street">
+
+            <label for="zipcode">Postcode</label>
+            <input type="text" id="zipcode">    
+
+            <label for="state">Provincie</label>
+            <select name="dropdown" id="dropdown">
+                    <option value="">Maak een keuze</option>
+                    <option value="1">Drenthe</option>
+                    <option value="2">Flevoland</option>
+                    <option value="3">Friesland</option>
+                    <option value="4">Gelderland</option>
+                    <option value="5">Groningen</option>
+                    <option value="6">Limburg</option>
+                    <option value="7">Noord-Brabant</option>
+                    <option value="8">Noord-Holland</option>
+                    <option value="9">Overijssel</option>
+                    <option value="10">Utrecht</option>
+                    <option value="11">Zeeland</option>
+                    <option value="12">Zuid-Holland</option>
+            </select>
+        </fieldset>
+        <button type="submit" id="submit">Inzenden</button>
+    </form>
+    </main>
+</body>
+</html>
